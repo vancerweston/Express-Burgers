@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+  img#logo(src='#logo')
   p Welcome to #{title}
   ul#nav
    li
@@ -14,3 +15,24 @@ block content
       a(href='/desserts') Desserts
    li
       a(href='/directions') Directions
+  img#food(src='#')
+  br
+  img.sideMenu(src='#')
+  h2= sideOne
+  p= descOne
+
+  img.sideMenu(src='#')
+  h2= sideTwo
+  p= descTwo
+
+  img.sideMenu(src='#')
+  h2= sideThree
+  p= descThree
+
+  img.sideMenu(src='#')
+  h2= sideFour
+  p= descFour
+
+  img.sideMenu(src='#')
+  h2= sideFive
+  p= descFive

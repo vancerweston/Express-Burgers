@@ -2,7 +2,8 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  img#logo(src='#logo')
+  p Check out our #{title}
   ul#nav
    li
       a(href='/') Home
@@ -14,3 +15,24 @@ block content
       a(href='/desserts') Desserts
    li
       a(href='/directions') Directions
+  img#food(src='#')
+  br
+  img.burgerMenu(src='#')
+  h2= burgerOne
+  p= descOne
+
+  img.burgerMenu(src='#')
+  h2= burgerTwo
+  p= descTwo
+
+  img.burgerMenu(src='#')
+  h2= burgerThree
+  p= descThree
+
+  img.burgerMenu(src='#')
+  h2= burgerFour
+  p= descFour
+
+  img.burgerMenu(src='#')
+  h2= burgerFive
+  p= descFive
