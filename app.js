@@ -9,10 +9,18 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// create redirect NEEDS MORE WORK*********
-//********************************************
-app.get('localhost:3000/direction', (req, res, next) => {
-  res.redirect(301, 'localhost:3000/directions');
+// create redirect
+app.get('/direction', (req, res, next) => {
+  res.redirect(301, '/directions');
+});
+app.get('/burger', (req, res, next) => {
+  res.redirect(301, '/burgers');
+});
+app.get('/side', (req, res, next) => {
+  res.redirect(301, '/sides');
+});
+app.get('/dessert', (req, res, next) => {
+  res.redirect(301, '/desserts');
 });
 
 // view engine setup
