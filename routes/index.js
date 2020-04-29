@@ -5,8 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { 
     title: 'Express Burgers',
-    aboutTitle: 'All About Us',
-    aboutUs: 'We have always loved the small American resturants that define our culinary culture. Nothing is better than a fresh grilled burger or a smooth shake on a sunday. We know you love these things, and we love them too. So, we set out to bring those things to you. From our kitchen to yours, fresh food at a great price.' 
+    aboutTitle: 'All About Us:',
+    aboutBody: 'We have always loved the small American resturants that define our culinary culture. Nothing is better than a fresh grilled burger or a smooth shake on a sunday. We know you love these things, and we love them too. So, we set out to bring those things to you. From our kitchen to yours, fresh food at a great price.' 
 });
 });
 

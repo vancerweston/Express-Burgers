@@ -1,7 +1,6 @@
 extends layout
 
 block content
-div#header
   h1= title
   img#logo(src='#logo')
   p Welcome to #{title}
@@ -16,8 +15,6 @@ div#header
       a(href='/desserts') Desserts
    li
       a(href='/directions') Directions
-div#img
   img#food(src='#')
-div#about
   h2= aboutTitle
-  p= aboutUs
+  p= aboutBody
