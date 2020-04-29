@@ -14,6 +14,12 @@ app.get('localhost:3000/direction', (req, res, next) => {
   res.redirect(301, 'localhost:3000/directions');
 });
 
+// server port log
+app.listen(app.get('port'), () => {
+  console.log('Server is running at port:', port);
+});
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
