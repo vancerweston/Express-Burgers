@@ -9,6 +9,17 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+// create redirect
+app.get('localhost:3000/direction', (req, res, next) => {
+  res.redirect(301, 'localhost:3000/directions');
+});
+
+// server port log
+app.listen(port, () => {
+  console.log('Server is running at port:', port);
+});
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
