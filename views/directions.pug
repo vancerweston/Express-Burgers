@@ -16,4 +16,6 @@ block content
          a(href='/directions') Directions
    div(id='map', class='map')
       - var olMap = "var map = new ol.Map({target: 'map', layers: [new ol.layer.Tile({source: new ol.source.OSM()})], view: new ol.View({center: ol.proj.fromLonLat([-111.9, 40.78]), zoom: 10})});"
+      - var olMarker = "var layer = new ol.layer.Vector({source: new ol.source.Vector({features: [new ol.Feature({geometry: new ol.geom.Point(ol.proj.fromLonLat([-111.9, 40.78]))})]})}); map.addLayer(layer);"
       script= olMap
+      script= olMarker
