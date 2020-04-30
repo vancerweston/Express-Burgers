@@ -11,3 +11,12 @@ a {
   height: 400px;
   width: 100%;
 }
+
+.ol-overlay-container.ol-selectable {
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 0 15px 15px;
+  border: grey 2px solid;
+  padding: 5px;
+}
