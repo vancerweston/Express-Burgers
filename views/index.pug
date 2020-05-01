@@ -1,22 +1,22 @@
 extends layout
 
 block content
-#nav
-   h1= title
-   p Welcome to #{title}
-   ul
-      li
-         a(href='/') Home
-      li
-         a(href='/burgers') Burgers
-      li
-         a(href='/sides') Sides
-      li
-         a(href='/desserts') Desserts
-      li
-         a(href='/directions') Directions
-#foodPic
-   img#food(src='#')
-#about
-   h2= aboutTitle
-   p= aboutBody
+   #nav
+      h1= title
+      p Welcome to #{title}
+      ul
+         li
+            a(href='/') Home
+         li
+            a(href='/burgers') Burgers
+         li
+            a(href='/sides') Sides
+         li
+            a(href='/desserts') Desserts
+         li
+            a(href='/directions') Directions
+   #foodPic
+      img#food(src='#')
+   #about
+      h2= aboutTitle
+      p= aboutBody
