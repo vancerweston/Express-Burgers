@@ -20,3 +20,13 @@ a {
   border: grey 2px solid;
   padding: 5px;
 }
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: stretch;
+}
+
