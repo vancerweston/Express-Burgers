@@ -21,7 +21,7 @@ a {
   padding: 5px;
 }
 
-#nav {
+#nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -52,4 +52,9 @@ a {
 
 h1 {
     margin-left: 40.5%;
+}
+
+ul#nav li {
+  list-style: none;
+  margin: 0 15px;
 }
