@@ -137,10 +137,6 @@ footer#navFoot ul {
     font-size: 40px;
 }
 
-#foodPic {
-  margin-bottom: 5%;
-}
-
 #menu {
   display: grid;
   grid-template-columns: auto auto;
