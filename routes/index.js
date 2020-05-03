@@ -72,7 +72,7 @@ router.get('/desserts', function(req, res, next) {
 
 /* GET Directions page. */
 router.get('/directions', function(req, res, next) {
-  res.render('directions', { title: 'Express Burger' });
+  res.render('directions', { title: 'Express Burgers' });
 });
 
 
