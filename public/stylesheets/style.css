@@ -74,6 +74,10 @@ h1 {
   display: flex;
 }
 
+div#aboutUs {
+  width: 100%;
+}
+
 img#storeFront {
   margin: 0 5% 0 8%;
   width: 500px;
