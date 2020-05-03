@@ -1,6 +1,6 @@
 body {
   min-width: 550px;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -61,7 +61,7 @@ h1 {
 
 #navFoot li {
   list-style: none;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 #nav ul {
@@ -89,4 +89,30 @@ h1 {
 
 #about p {
   width: 60%;
+}
+
+footer#navFoot {
+  border-top: grey solid;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 2%;
+}
+
+footer#navFoot p {
+  color: grey;
+  margin-left: 0%;
+  width: 1000%;
+}
+
+footer#navFoot ul {
+  display: flex;
+}
+
+#navFoot ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+#navFoot ul li a:hover {
+  color: black;
 }
