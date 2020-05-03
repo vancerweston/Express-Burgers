@@ -69,19 +69,23 @@ h1 {
 }
 
 #about {
-  margin-top: 5%;
-  margin-left: 10%;
+  margin: 5% 0 0 10%;
   display: flex;
-  width: 70%;
+}
+
+img#storeFront {
+  margin: 0 5% 0 8%;
+  width: 350px;
+  height: 200px;
 }
 
 #about h2 {
-  margin-right: 5%;
-  width: 15%;
+margin-top: 6%;
+text-align: center;
 }
 
 #about p {
-  width: 60%;
+text-align: center;
 }
 
 footer#navFoot {
