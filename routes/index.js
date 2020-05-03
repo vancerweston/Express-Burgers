@@ -20,11 +20,13 @@ router.get('/burgers', function(req, res, next) {
     burgerThree: 'Burger3Name',
     burgerFour: 'Burger4Name',
     burgerFive: 'Burger5Name',
+    burgerSix: 'Burger6Name',
     descOne: 'description...',
     descTwo: 'description...',
     descThree: 'description...',
     descFour: 'description...',
-    descFive: 'description...'
+    descFive: 'description...',
+    descSix: 'description...'
   });
 });
 
@@ -38,11 +40,13 @@ router.get('/sides', function(req, res, next) {
     sideThree: 'side3Name',
     sideFour: 'side4Name',
     sideFive: 'side5Name',
+    sideSix: 'side6Name',
     descOne: 'description...',
     descTwo: 'description...',
     descThree: 'description...',
     descFour: 'description...',
-    descFive: 'description...' 
+    descFive: 'description...', 
+    descSix: 'description...' 
   });
 });
 
@@ -56,11 +60,13 @@ router.get('/desserts', function(req, res, next) {
     dessertThree: 'dessert3Name',
     dessertFour: 'dessert4Name',
     dessertFive: 'dessert5Name',
+    dessertSix: 'dessert6Name',
     descOne: 'description...',
     descTwo: 'description...',
     descThree: 'description...',
     descFour: 'description...',
-    descFive: 'description...'
+    descFive: 'description...', 
+    descSix: 'description...'
   });
 });
 

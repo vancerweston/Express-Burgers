@@ -139,7 +139,7 @@ footer#navFoot ul {
 
 #menu {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   justify-items: center;
   align-items: center;
 }
@@ -147,4 +147,21 @@ footer#navFoot ul {
 .menuItem {
 text-align: center;
 margin-top: 15%;
+}
+
+.menuItem img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5%;
+}
+
+.menuItem h3 {
+  text-transform: uppercase;
+  font-size: 130%;
+  margin: 8% auto;
+}
+
+.menuItem p {
+  width: 90%;
+  margin: 5% auto;
 }
