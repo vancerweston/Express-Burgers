@@ -71,3 +71,22 @@ h1 {
   border-bottom: white 10px solid;
   padding: 0;
 }
+
+#foodPic {
+  height: 450px;
+}
+
+#about {
+  margin-left: 10%;
+  display: flex;
+  width: 70%;
+}
+
+#about h2 {
+  margin-right: 5%;
+  width: 15%;
+}
+
+#about p {
+  width: 60%;
+}
