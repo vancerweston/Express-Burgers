@@ -13,7 +13,8 @@ router.get('/', function(req, res, next) {
 /* GET burgers page. */
 router.get('/burgers', function(req, res, next) {
   res.render('burgers', { 
-    title: 'Burgers',
+    title: 'Express Burgers',
+    name: 'Burgers',
     burgerOne: 'Burger1Name',
     burgerTwo: 'Burger2Name',
     burgerThree: 'Burger3Name',
@@ -30,7 +31,8 @@ router.get('/burgers', function(req, res, next) {
 /* GET Sides page. */
 router.get('/sides', function(req, res, next) {
   res.render('sides', { 
-    title: 'Sides',
+    title: 'Express Burgers',
+    name: 'Sides',
     sideOne: 'side1Name',
     sideTwo: 'side2Name',
     sideThree: 'side3Name',
@@ -47,7 +49,8 @@ router.get('/sides', function(req, res, next) {
 /* GET Desserts page. */
 router.get('/desserts', function(req, res, next) {
   res.render('desserts', { 
-    title: 'Desserts',
+    title: 'Express Burgers',
+    name: 'Desserts',
     dessertOne: 'dessert1Name',
     dessertTwo: 'dessert2Name',
     dessertThree: 'dessert3Name',
@@ -63,7 +66,7 @@ router.get('/desserts', function(req, res, next) {
 
 /* GET Directions page. */
 router.get('/directions', function(req, res, next) {
-  res.render('directions', { title: 'Directions' });
+  res.render('directions', { title: 'Express Burger' });
 });
 
 

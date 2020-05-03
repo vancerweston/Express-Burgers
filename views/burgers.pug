@@ -2,37 +2,38 @@ extends layout
 
 block content
    h1= title
-   img#logo(src='#logo')
-   p Check out our #{title}
-   ul#nav
-      li
-         a(href='/') Home
-      li
-         a(href='/burgers') Burgers
-      li
-         a(href='/sides') Sides
-      li
-         a(href='/desserts') Desserts
-      li
-         a(href='/directions') Directions
-   img#food(src='#')
-   br
-   img.burgerMenu(src='#')
-   h3= burgerOne
-   p= descOne
+   #nav
+      ul
+         li
+            a(href='/') Home
+         li
+            a(href='/burgers') Burgers
+         li
+            a(href='/sides') Sides
+         li
+            a(href='/desserts') Desserts
+         li
+            a(href='/directions') Directions
+   #foodPic
+      img#food(src='#')
+      p Check out our #{name}!
+   #menu
+      img.burgerMenu(src='#')
+      h3= burgerOne
+      p= descOne
 
-   img.burgerMenu(src='#')
-   h3= burgerTwo
-   p= descTwo
+      img.burgerMenu(src='#')
+      h3= burgerTwo
+      p= descTwo
 
-   img.burgerMenu(src='#')
-   h3= burgerThree
-   p= descThree
+      img.burgerMenu(src='#')
+      h3= burgerThree
+      p= descThree
 
-   img.burgerMenu(src='#')
-   h3= burgerFour
-   p= descFour
+      img.burgerMenu(src='#')
+      h3= burgerFour
+      p= descFour
 
-   img.burgerMenu(src='#')
-   h3= burgerFive
-   p= descFive
+      img.burgerMenu(src='#')
+      h3= burgerFive
+      p= descFive
