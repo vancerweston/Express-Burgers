@@ -95,7 +95,7 @@ footer#navFoot {
   border-top: grey solid;
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 2%;
+  margin-top: 8%;
 }
 
 footer#navFoot p {
@@ -115,4 +115,40 @@ footer#navFoot ul {
 
 #navFoot ul li a:hover {
   color: black;
+}
+
+#foodPic img#food {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+#foodPic p {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 455px;
+    text-align: center;
+    width: 60%;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#foodPic {
+  margin-bottom: 5%;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.menuItem {
+text-align: center;
+margin-top: 15%;
 }
