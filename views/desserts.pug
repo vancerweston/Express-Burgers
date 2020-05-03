@@ -18,22 +18,23 @@ block content
       img#food(src='#')
       p Here's our delicious #{name}!
    #menu
-      img.dessertMenu(src='#')
-      h3= dessertOne
-      p= descOne
-
-      img.dessertMenu(src='#')
-      h3= dessertTwo
-      p= descTwo
-
-      img.dessertMenu(src='#')
-      h3= dessertThree
-      p= descThree
-
-      img.dessertMenu(src='#')
-      h3= dessertFour
-      p= descFour
-
-      img.dessertMenu(src='#')
-      h3= dessertFive
-      p= descFive
+      .menuItem
+         img.dessertMenu(src='#')
+         h3= dessertOne
+         p= descOne
+      .menuItem
+         img.dessertMenu(src='#')
+         h3= dessertTwo
+         p= descTwo
+      .menuItem
+         img.dessertMenu(src='#')
+         h3= dessertThree
+         p= descThree
+      .menuItem
+         img.dessertMenu(src='#')
+         h3= dessertFour
+         p= descFour
+      .menuItem
+         img.dessertMenu(src='#')
+         h3= dessertFive
+         p= descFive
