@@ -75,11 +75,11 @@ h1 {
 }
 
 div#aboutUs {
-  width: 100%;
+  max-width: 550px;
 }
 
 img#storeFront {
-  margin: 0 5% 0 8%;
+  margin: 0 5% 0 10%;
   width: 500px;
   height: 250px;
 }
