@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var menu = require('./menu');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,62 +13,17 @@ router.get('/', function(req, res, next) {
 
 /* GET burgers page. */
 router.get('/burgers', function(req, res, next) {
-  res.render('burgers', { 
-    title: 'Express Burgers',
-    name: 'Burgers',
-    burgerOne: 'Burger1Name',
-    burgerTwo: 'Burger2Name',
-    burgerThree: 'Burger3Name',
-    burgerFour: 'Burger4Name',
-    burgerFive: 'Burger5Name',
-    burgerSix: 'Burger6Name',
-    descOne: 'description...',
-    descTwo: 'description...',
-    descThree: 'description...',
-    descFour: 'description...',
-    descFive: 'description...',
-    descSix: 'description...'
-  });
+  res.render('burgers', menu.burgers);
 });
 
 /* GET Sides page. */
 router.get('/sides', function(req, res, next) {
-  res.render('sides', { 
-    title: 'Express Burgers',
-    name: 'Sides',
-    sideOne: 'side1Name',
-    sideTwo: 'side2Name',
-    sideThree: 'side3Name',
-    sideFour: 'side4Name',
-    sideFive: 'side5Name',
-    sideSix: 'side6Name',
-    descOne: 'description...',
-    descTwo: 'description...',
-    descThree: 'description...',
-    descFour: 'description...',
-    descFive: 'description...', 
-    descSix: 'description...' 
-  });
+  res.render('sides', menu.sides); 
 });
 
 /* GET Desserts page. */
 router.get('/desserts', function(req, res, next) {
-  res.render('desserts', { 
-    title: 'Express Burgers',
-    name: 'Desserts',
-    dessertOne: 'dessert1Name',
-    dessertTwo: 'dessert2Name',
-    dessertThree: 'dessert3Name',
-    dessertFour: 'dessert4Name',
-    dessertFive: 'dessert5Name',
-    dessertSix: 'dessert6Name',
-    descOne: 'description...',
-    descTwo: 'description...',
-    descThree: 'description...',
-    descFour: 'description...',
-    descFive: 'description...', 
-    descSix: 'description...'
-  });
+  res.render('desserts', menu.desserts); 
 });
 
 /* GET Directions page. */

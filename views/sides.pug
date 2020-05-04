@@ -18,27 +18,8 @@ block content
       img#food(src='https://d1f28u9l1tudce.cloudfront.net/menu/marquee/menu-category-sides.jpg')
       p Look at our sweet #{name}!
    #menu
-      .menuItem
-         img.sideMenu(src='https://olo-images-live.imgix.net/44/44a37f362a55429493b4020d16a9e304.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=500&h=333&fit=fill&fm=png32&bg=transparent&s=ed9bffb6289025302848a5b5edd98d6b')
-         h3= sideOne
-         p= descOne
-      .menuItem
-         img.sideMenu(src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2DLzr_UDpBH-QD90xJZzzsnL9JuiOElLulaYRNUb1Kv2zKVLs&usqp=CAU')
-         h3= sideTwo
-         p= descTwo
-      .menuItem
-         img.sideMenu(src='https://static.olocdn.net/menu/chilis/1c325625bc0b6fa5bcf7edc8f58f2535.jpg')
-         h3= sideThree
-         p= descThree
-      .menuItem
-         img.sideMenu(src='https://prods3.imgix.net/images/articles/2017_02/Non-Feature-best-sides-soup.jpg')
-         h3= sideFour
-         p= descFour
-      .menuItem
-         img.sideMenu(src='https://www.omahasteaks.com/gifs/200x150/po042.jpg')
-         h3= sideFive
-         p= descFive
-      .menuItem
-         img.sideMenu(src='https://iowagirleats-iowagirleats.netdna-ssl.com/wp-content/uploads/2015/04/EasyGarlicButterRoastedMushrooms.jpg')
-         h3= sideSix
-         p= descSix
+      each val in items
+         .menuItem
+            img.sideMenu(src=val.img)
+            h3= val.title
+            p= val.descr     

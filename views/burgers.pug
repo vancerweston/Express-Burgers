@@ -18,29 +18,8 @@ block content
       img#food(src='https://www.chicken.ca/assets/RecipePhotos/_resampled/FillWyIxNDQwIiwiNzAwIl0/Big-Juicy-Burgers.jpg')
       p Check out our #{name}!
    #menu
-      .menuItem
-         img.burgerMenu(src='https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/exps28800_UG143377D12_18_1b_RMS.jpg')
-         h3= burgerOne
-         p= descOne
-      .menuItem
-         img.burgerMenu(src='https://www.thewholesomedish.com/wp-content/uploads/2019/04/The-Best-Classic-Hamburgers-550.jpg')
-         h3= burgerTwo
-         p= descTwo
-      .menuItem
-         img.burgerMenu(src='https://www.sunset.com/wp-content/uploads/camembert-burgers-60355-0718-900x675.jpg')
-         h3= burgerThree
-         p= descThree
-      .menuItem
-         img.burgerMenu(src='https://www.simplyrecipes.com/wp-content/uploads/2011/06/grilled-beef-mushroom-burgers-verrtical-a-1800.jpg')
-         h3= burgerFour
-         p= descFour
-      .menuItem
-         img.burgerMenu(src='https://cdn.vox-cdn.com/thumbor/0wTSEQVAzfEwpwcWym8gDWPbWn8=/0x0:2796x2048/1200x900/filters:focal(1102x698:1548x1144)/cdn.vox-cdn.com/uploads/chorus_image/image/60125819/2019_09_CatherineAbegg_EdenHill_057.19.jpg')
-         h3= burgerFive
-         p= descFive
-      .menuItem
-         img.burgerMenu(src='https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F201201-xl-nacho-burger.jpg%3Fitok%3DpoaTDSGH')
-         h3= burgerSix
-         p= descSix
-
-      <!--need to use each for menu items, I could put the menuItem as an object, then store all objects in an array. Then it would be 'each val in [{}, {}, {}] li= val'-->
+      each val in items
+         .menuItem
+            img.burgerMenu(src=val.img)
+            h3= val.title
+            p= val.descr     

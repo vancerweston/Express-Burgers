@@ -147,7 +147,7 @@ footer#navFoot ul {
 
 #menu {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
 }
@@ -161,6 +161,12 @@ margin-top: 15%;
   width: 150px;
   height: 150px;
   margin-bottom: 5%;
+  transition: width 2s, height 4s;
+}
+
+.menuItem img:hover {
+  width: 300px;
+  height: 300px;
 }
 
 .menuItem h3 {
@@ -170,6 +176,6 @@ margin-top: 15%;
 }
 
 .menuItem p {
-  width: 90%;
+  width: 60%;
   margin: 5% auto;
 }
