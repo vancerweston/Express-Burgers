@@ -9,11 +9,11 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
+/*
 app.get('/menu', (req, res, next) => {
   res.
 });
-
+*/
 // create redirect
 app.get('/direction', (req, res, next) => {
   res.redirect(301, '/directions');
