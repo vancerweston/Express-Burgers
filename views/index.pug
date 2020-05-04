@@ -24,7 +24,16 @@ block content
       <!--The block below is practice for an each statement... needs lots of work-->
    #practice
          .menuItem
-            each val, key in {burgerOne: 'Hello', burgerTwo: 'did this work'}
-               img.burgerMenu(src='https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F201201-xl-nacho-burger.jpg%3Fitok%3DpoaTDSGH')
+            each val, key in {
+                  burgerOne: {
+                     title: 'Hello',
+                     img: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F201201-xl-nacho-burger.jpg%3Fitok%3DpoaTDSGH'
+                  },
+                  burgerTwo: {
+                     title: 'did this work',
+                     img: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F201201-xl-nacho-burger.jpg%3Fitok%3DpoaTDSGH'
+                  }
+               }
+               img.burgerMenu(src=val.img)
                h3= key
-               p= val
+               p= val.title
